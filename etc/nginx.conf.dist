@@ -1,0 +1,10 @@
+server {
+    server_name web.api-shortener.lan;
+
+    root /var/www/projects/api-shortener-gui/web/;
+
+    include /etc/nginx/mime.types; 
+
+    error_log /var/www/projects/api-shortener-gui/log/nginx_error.log;
+    access_log /var/www/projects/api-shortener-gui/log/nginx_access.log;
+  }
