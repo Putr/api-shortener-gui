@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+	</head>
+	<body>
+		<header>
+			<nav class="light-blue lighten-1" role="navigation">
+				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ApiShort</a>
+				<ul class="right hide-on-med-and-down">
+					<li class="active"><a href="index.html"><i class="material-icons left">add</i>ADD</a></li>
+					<li><a href="rem.html"><i class="material-icons left">delete</i>REMOVE</a></li>
+					<li><a href="stats.html"><i class="material-icons left">info_outline</i> STATS</a></li>
+				</ul>
+				<ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+					<li class="active"><a href="index.html">ADD</a></li>
+					<li><a href="rem.html">REMOVE</a></li>
+					<li><a href="stats.html">STATS</a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br><br>
+			<h1 class="header center orange-text">New short url</h1>
+			<form class="col s4" id="add-form">
+				<div class="row">
+					<div class="input-field col s4">
+						<select class="browser-default">
+							<option value="1">pir.at</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+					</div>
+					<div class="input-field col s8">
+						<input id="shortUrl" type="text" class="validate">
+						<label for="shortUrl">Short URL</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="target_url" type="url" class="validate">
+						<label for="target_url">Target URL</label>
+					</div>
+				</div>
+				<div class="row center">
+					<button class="btn waves-effect waves-light black" type="submit" name="action">Submit
+					<i class="material-icons right">send</i>
+					</button>
+				</div>
+			</form>
+			<br><br>
+		</div>
+	</div>
+	</main>
+	<footer class="page-footer orange">
+		<div class="footer-copyright">
+			<div class="container">
+				<a class="orange-text text-lighten-3" href="https://github.com/Putr/api-shortener-gui">ApiShort GUI</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

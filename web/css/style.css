@@ -1,0 +1,19 @@
+.header {
+	padding-top: 10%;
+}
+/* Sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+	flex: 1 0 auto;
+}
+
+/* Footer fixes */
+
+footer.page-footer {
+	padding-top: 0;
+}
