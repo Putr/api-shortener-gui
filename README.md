@@ -1,7 +1,7 @@
 GUI for API Shortner
 --------------------
 
-Minimal GUI for the api-shortener. Support creation and deletion. Does not display stats.
+Minimal GUI for [api-shortener](https://github.com/Putr/api-shortener). Supports creation and deletion. Does not display stats.
 
 **Usecase**: This is intendend only for testing or as a stopgap method while you're implementing the api into your own app. It's probably also good enough for personal use.
 
