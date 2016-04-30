@@ -15,12 +15,12 @@
 			<nav class="light-blue lighten-1" role="navigation">
 				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ApiShort</a>
 				<ul class="right hide-on-med-and-down">
-					<li class="active"><a href="index.html"><i class="material-icons left">add</i>ADD</a></li>
-					<li><a href="rem.html"><i class="material-icons left">delete</i>REMOVE</a></li>
+					<li><a href="index.html"><i class="material-icons left">add</i>ADD</a></li>
+					<li class="active"><a href="rem.html"><i class="material-icons left">delete</i>REMOVE</a></li>
 				</ul>
 				<ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-					<li class="active"><a href="index.html">ADD</a></li>
-					<li><a href="rem.html">REMOVE</a></li>
+					<li><a href="index.html">ADD</a></li>
+					<li class="active"><a href="rem.html">REMOVE</a></li>
 				</ul>
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 			</div>
@@ -30,8 +30,8 @@
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
 			<br><br>
-			<h1 class="header center orange-text">New short url</h1>
-			<form class="col s4" id="add-form">
+			<h1 class="header center orange-text">Remove short url</h1>
+			<form class="col s4" id="rem-form">
 				<div class="row">
 					<div class="input-field col s4">
 						<select class="browser-default" id="domain">
@@ -42,14 +42,8 @@
 						<label for="shortUrl">Short URL</label>
 					</div>
 				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<input id="target_url" type="url" class="validate">
-						<label for="target_url">Target URL</label>
-					</div>
-				</div>
 				<div class="row center">
-					<button class="btn waves-effect waves-light black" type="submit" name="action">Submit
+					<button class="btn waves-effect waves-light black" type="submit" name="action">Remove
 					<i class="material-icons right">send</i>
 					</button>
 				</div>
