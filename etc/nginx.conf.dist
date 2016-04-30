@@ -5,6 +5,9 @@ server {
 
     include /etc/nginx/mime.types; 
 
+    auth_basic "Private";
+    auth_basic_user_file /var/www/projects/api-shortener-gui/etc/.htpasswd;
+
     error_log /var/www/projects/api-shortener-gui/log/nginx_error.log;
     access_log /var/www/projects/api-shortener-gui/log/nginx_access.log;
   }
