@@ -15,14 +15,14 @@
 			<nav class="light-blue lighten-1" role="navigation">
 				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ApiShort</a>
 				<ul class="right hide-on-med-and-down">
-					<li class="active"><a href="index.html"><i class="material-icons left">add</i>ADD</a></li>
+					<li><a href="index.html"><i class="material-icons left">add</i>ADD</a></li>
 					<li><a href="rem.html"><i class="material-icons left">delete</i>REMOVE</a></li>
-					<li><a href="stats.html"><i class="material-icons left">info</i>STATS</a></li>
+					<li class="active"><a href="stats.html"><i class="material-icons left">info</i>STATS</a></li>
 				</ul>
 				<ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-					<li class="active"><a href="index.html">ADD</a></li>
+					<li><a href="index.html">ADD</a></li>
 					<li><a href="rem.html">REMOVE</a></li>
-					<li><a href="stats.html">STATS</a></li>
+					<li class="active"><a href="stats.html">STATS</a></li>
 				</ul>
 				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 			</div>
@@ -31,32 +31,12 @@
 	<main>
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
-			<br><br>
-			<h1 class="header center orange-text">New short url</h1>
-			<form class="col s4" id="add-form">
-				<div class="row">
-					<div class="input-field col s4">
-						<select class="browser-default" id="domain">
-						</select>
-					</div>
-					<div class="input-field col s8">
-						<input id="shortUrl" type="text" class="validate">
-						<label for="shortUrl">Short URL</label>
-					</div>
+			<div class="row stats-tabs">
+				<div class="col s12">
+					<ul class="tabs">
+					</ul>
 				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<input id="target_url" type="url" class="validate">
-						<label for="target_url">Target URL</label>
-					</div>
-				</div>
-				<div class="row center">
-					<button class="btn waves-effect waves-light black" type="submit" name="action">Submit
-					<i class="material-icons right">send</i>
-					</button>
-				</div>
-			</form>
-			<br><br>
+			</div>
 		</div>
 	</div>
 	</main>

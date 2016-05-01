@@ -13,7 +13,10 @@ main {
 }
 
 /* Footer fixes */
-
 footer.page-footer {
 	padding-top: 0;
+}
+
+.table-target-url {
+    max-width: 400px;
 }
