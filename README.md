@@ -7,6 +7,8 @@ Minimal GUI for [api-shortener](https://github.com/Putr/api-shortener). Supports
 
 **DO NOT USE IN PRODUCTION**
 
+![ApiShort screenshots](http://files.andree.si/apishort.gif)
+
 ## Requirements
 
 - Nginx => 1.7.5
