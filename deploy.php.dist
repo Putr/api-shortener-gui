@@ -1,0 +1,34 @@
+<?php
+
+// All Deployer recipes are based on `recipe/common.php`.
+require 'recipe/common.php';
+
+// Define a server for deployment.
+// Let's name it "prod" and use port 22.
+server('prod', 'HOST', 22)
+    ->user('USERNAME')
+    ->forwardAgent() // You can use identity key, ssh config, or username/password to auth on the server.
+    ->stage('production')
+    ->env('deploy_path', '/var/www/sites/api-shortener-gui.prod'); // Define the base path to deploy your project to.
+
+// Specify the repository from which to download your project's code.
+// The server needs to have git installed for this to work.
+// If you're not using a forward agent, then the server has to be able to clone
+// your project from this repository.
+set('repository', 'git@github.com:Putr/api-shortener-gui.git');
+
+set('shared_dirs', ['log', 'etc']);
+set('writable_dirs', ['log']);
+set('http_user', 'www-data');
+
+set('shared_files', ['web/config.js']);
+
+task('deploy', [
+    'deploy:prepare',
+    'deploy:release',
+    'deploy:update_code',
+    'deploy:shared',
+    'deploy:symlink',
+    'cleanup',
+])->desc('Deploy your project');
+after('deploy', 'success');

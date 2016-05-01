@@ -40,7 +40,18 @@ That's it!
 
 This is intended for stopgap/testing purposes. It should be secured with at least Basic HTTP Auth.
 
+## Deployment
 
+Deployment is done with [Deployer](http://deployer.org/).
+
+**Copy config file and configure**
+
+    cp deploy.php.dist deploy.php
+    nano deploy.php
+
+run with
+
+    dep deploy production
 
 
 

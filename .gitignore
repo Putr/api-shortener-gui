@@ -3,3 +3,4 @@ composer.phar
 etc/nginx.conf
 web/config.js
 etc/.htpasswd
+deploy.php
